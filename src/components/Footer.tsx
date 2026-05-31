@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { asset } from "@/lib/paths";
 
 const services = [
   "House Wiring",
@@ -33,7 +34,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl p-4 inline-block mb-4 shadow-lg">
               <Image
-                src="/logo.png"
+                src={asset("/logo.png")}
                 alt="Sree Isai Electrical Contractor"
                 width={140}
                 height={140}

@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 const SITE_URL = "https://asal1989.github.io/sathish-website";
 const PHONE = "+91-96882-16635";
 
+// Absolute URL for logo (used in metadata/OG/schema which need absolute URLs)
+const LOGO_URL = `${SITE_URL}/logo.png`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Sree Isai Electrical Contractor",
     images: [
       {
-        url: "/logo.png",
+        url: LOGO_URL,
         width: 1254,
         height: 1254,
         alt: "Sree Isai Electrical Contractor - Hosur, Tamil Nadu",
@@ -59,14 +62,12 @@ export const metadata: Metadata = {
     title: "Sree Isai Electrical Contractor — Hosur, Tamil Nadu",
     description:
       "Licensed electrical contractor in Hosur. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
-    images: ["/logo.png"],
+    images: [LOGO_URL],
   },
   icons: {
-    icon: [
-      { url: "/logo.png", type: "image/png" },
-    ],
-    apple: [{ url: "/logo.png" }],
-    shortcut: ["/logo.png"],
+    icon: [{ url: "/sathish-website/logo.png", type: "image/png" }],
+    apple: [{ url: "/sathish-website/logo.png" }],
+    shortcut: ["/sathish-website/logo.png"],
   },
   robots: {
     index: true,

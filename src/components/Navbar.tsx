@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
+import { asset } from "@/lib/paths";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -54,7 +55,7 @@ export default function Navbar() {
               } group-hover:scale-105`}
             >
               <Image
-                src="/logo.png"
+                src={asset("/logo.png")}
                 alt="Sree Isai Electrical Contractor"
                 fill
                 priority
