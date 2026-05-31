@@ -1,0 +1,2 @@
+:HL["/sathish-website/_next/static/chunks/0ntr3kk_c-ucv.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"5rV7SU9hyBZpe568jersc"}

@@ -1,0 +1,33 @@
+{
+  "name": "Sree Isai Electrical Contractor",
+  "short_name": "Sree Isai",
+  "description": "Licensed electrical contractor in Hosur, Tamil Nadu — house wiring, industrial, commercial, solar, CCTV, generators",
+  "start_url": "/sathish-website/",
+  "scope": "/sathish-website/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "lang": "en-IN",
+  "categories": ["business", "utilities"],
+  "icons": [
+    {
+      "src": "/sathish-website/logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/sathish-website/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/sathish-website/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
