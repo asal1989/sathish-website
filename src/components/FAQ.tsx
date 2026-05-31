@@ -6,7 +6,7 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 const faqs = [
   {
     q: "What areas do you serve in Tamil Nadu?",
-    a: "We serve Hosur, Krishnagiri, Bagalur, Shoolagiri, Berigai, Thally, and surrounding areas across Tamil Nadu and parts of Karnataka. For projects outside these areas, please call us to discuss.",
+    a: "We serve Tirunelveli, Palayamkottai, Rathapuram, Nanguneri, Tenkasi, Ambasamudram, Cheranmahadevi, and surrounding areas across Tirunelveli district. For projects outside these areas, please call us to discuss.",
   },
   {
     q: "Are you a licensed electrical contractor?",
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Do you give free quotations?",
-    a: "Yes — site visits and quotations are completely free for residential and commercial projects in Hosur. Just call +91 96882 16635 or send your requirements via WhatsApp and we'll respond within 30 minutes.",
+    a: "Yes — site visits and quotations are completely free for residential and commercial projects in Tirunelveli district. Just call +91 96882 16635 or send your requirements via WhatsApp and we'll respond within 30 minutes.",
   },
   {
     q: "How long does house wiring take?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Do you handle emergency electrical repairs?",
-    a: "Yes, we offer 24/7 emergency electrical repair service for our clients in Hosur and surrounding areas. Call +91 96882 16635 anytime for urgent issues like short circuits, power failures, or panel board problems.",
+    a: "Yes, we offer 24/7 emergency electrical repair service for our clients in Tirunelveli and surrounding areas. Call +91 96882 16635 anytime for urgent issues like short circuits, power failures, or panel board problems.",
   },
   {
     q: "What's included in solar installation?",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "Can you upgrade old wiring to copper / modern standards?",
-    a: "Absolutely. We specialize in rewiring older homes with modern copper wiring, ELCB/RCCB protection, modular switches, and updated panel boards. This is one of our most-requested services in older Hosur neighborhoods.",
+    a: "Absolutely. We specialize in rewiring older homes with modern copper wiring, ELCB/RCCB protection, modular switches, and updated panel boards. This is one of our most-requested services in older Tirunelveli neighborhoods.",
   },
   {
     q: "Do you install EV charging points at home?",
@@ -62,7 +62,7 @@ export default function FAQ() {
             Got Questions? <span className="gradient-text">We&apos;ve Got Answers</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Common questions from our customers in Hosur and Tamil Nadu about
+            Common questions from our customers in Tirunelveli and Tamil Nadu about
             our electrical services, pricing, and process.
           </p>
         </div>

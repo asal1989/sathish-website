@@ -42,7 +42,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Leading electrical contractor in Hosur, Tamil Nadu. Serving
+              Leading electrical contractor in Tirunelveli, Tamil Nadu. Serving
               residential, commercial, and industrial clients since 2009 with
               excellence and safety.
             </p>
@@ -124,8 +124,9 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-300 text-sm">Hosur, Tamil Nadu</p>
-                    <p className="text-gray-500 text-xs">Pin: 635109, India</p>
+                    <p className="text-gray-300 text-sm">403, Amman Kovil Street, Nambipathu</p>
+                    <p className="text-gray-300 text-sm">Valliyamalpuram PO, Rathapuram Taluk</p>
+                    <p className="text-gray-500 text-xs">Tirunelveli District - 627117, Tamil Nadu</p>
                   </div>
                 </div>
               </li>
@@ -154,7 +155,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Sree Isai Electrical Contractor. All rights reserved.
           </p>
           <p className="text-gray-600 text-xs">
-            Hosur, Tamil Nadu, India | Licensed Electrical Contractor
+Tirunelveli, Tamil Nadu, India | Licensed Electrical Contractor
           </p>
         </div>
       </div>

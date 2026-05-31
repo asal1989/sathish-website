@@ -39,8 +39,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Office",
-    value: "Hosur, Tamil Nadu 635109",
-    link: "https://maps.google.com/?q=Hosur,Tamil+Nadu",
+    value: "403, Amman Kovil Street, Nambipathu, Valliyamalpuram PO, Rathapuram Taluk, Tirunelveli - 627117",
+    link: "https://maps.google.com/?q=Valliyamalpuram,Rathapuram,Tirunelveli,Tamil+Nadu+627117",
     sub: "India",
   },
   {
@@ -209,14 +209,14 @@ export default function Contact() {
             {/* Google Map embed placeholder */}
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm h-48 bg-blue-50 flex items-center justify-center">
               <a
-                href="https://maps.google.com/?q=Hosur,Tamil+Nadu"
+                href="https://maps.google.com/?q=Valliyamalpuram,Rathapuram,Tirunelveli,Tamil+Nadu+627117"
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-col items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors"
               >
                 <MapPin className="w-8 h-8" />
                 <span className="font-semibold">View on Google Maps</span>
-                <span className="text-sm text-gray-500">Hosur, Tamil Nadu</span>
+                <span className="text-sm text-gray-500">Tirunelveli, Tamil Nadu</span>
               </a>
             </div>
 

@@ -69,7 +69,7 @@ export default function Hero() {
           >
             <Zap className="w-4 h-4 text-yellow-400 fill-yellow-400 animate-zap" />
             <span className="text-yellow-300 text-sm font-semibold tracking-wide">
-              #1 Electrical Contractor in Hosur, Tamil Nadu
+              #1 Electrical Contractor in Tirunelveli, Tamil Nadu
             </span>
           </div>
 

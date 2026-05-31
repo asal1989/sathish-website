@@ -8,7 +8,7 @@ import { Calendar, Clock, ArrowRight, ArrowLeft } from "lucide-react";
 export const metadata: Metadata = {
   title: "Blog — Electrical Safety Tips | Sree Isai Electrical Contractor",
   description:
-    "Expert electrical safety tips, energy-saving guides, and industry insights from Sree Isai Electrical Contractor, Hosur, Tamil Nadu.",
+    "Expert electrical safety tips, energy-saving guides, and industry insights from Sree Isai Electrical Contractor, Tirunelveli, Tamil Nadu.",
 };
 
 const posts = [

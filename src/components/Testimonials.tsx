@@ -9,7 +9,7 @@ const testimonials = [
     id: 1,
     name: "Rajesh Kumar",
     role: "Home Owner",
-    location: "Hosur",
+    location: "Tirunelveli",
     rating: 5,
     review:
       "Excellent service! The team wired our entire 3BHK villa in just 5 days. Very professional, clean work, and they explained every step. Highly recommended for house wiring.",
@@ -20,7 +20,7 @@ const testimonials = [
     id: 2,
     name: "Priya Shanmugam",
     role: "Factory Manager",
-    location: "SIPCOT, Hosur",
+    location: "Rathapuram",
     rating: 5,
     review:
       "We hired Sree Isai for our entire industrial plant electrical works. They completed the HT/LT installation on schedule despite tight deadlines. Zero safety incidents.",
@@ -31,7 +31,7 @@ const testimonials = [
     id: 3,
     name: "Venkatesh Rajan",
     role: "Business Owner",
-    location: "Krishnagiri",
+    location: "Nanguneri",
     rating: 5,
     review:
       "Our 50 kWp solar installation was done perfectly. The team guided us through MNRE subsidy application too. Our electricity bill has reduced by 80%!",
@@ -42,7 +42,7 @@ const testimonials = [
     id: 4,
     name: "Meena Devi",
     role: "Hotel Owner",
-    location: "Hosur",
+    location: "Palayamkottai",
     rating: 5,
     review:
       "The CCTV installation at our hotel is superb. Remote monitoring works flawlessly. Sree Isai team was responsive and professional throughout.",
@@ -53,7 +53,7 @@ const testimonials = [
     id: 5,
     name: "Karthikeyan S",
     role: "IT Manager",
-    location: "Electronic City",
+    location: "Tirunelveli",
     rating: 5,
     review:
       "For our 50,000 sqft IT park, Sree Isai handled all electrical works including LT panels, UPS, and structured cabling. On-time, on-budget delivery.",
@@ -64,7 +64,7 @@ const testimonials = [
     id: 6,
     name: "Aarthi Murugan",
     role: "Apartment Resident",
-    location: "Hosur",
+    location: "Ambasamudram",
     rating: 5,
     review:
       "AMC service is exceptional. They respond within 1-2 hours for any electrical issue. Very trustworthy technicians. Peace of mind guaranteed.",

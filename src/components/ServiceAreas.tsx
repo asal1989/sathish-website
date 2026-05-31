@@ -3,32 +3,32 @@
 import { MapPin, Navigation } from "lucide-react";
 
 const areas = [
-  { name: "Hosur", desc: "All zones — Bagalur Road, SIPCOT, Mathigiri, Old Hosur" },
-  { name: "Krishnagiri", desc: "City & taluk areas" },
-  { name: "Bagalur", desc: "Industrial & residential" },
-  { name: "Shoolagiri", desc: "Town & nearby villages" },
-  { name: "Berigai", desc: "Industrial parks & homes" },
-  { name: "Thally", desc: "Hill stations & residences" },
-  { name: "Denkanikottai", desc: "Town & surroundings" },
-  { name: "Kelamangalam", desc: "Town & farms" },
-  { name: "Anchetty", desc: "Hill & rural areas" },
+  { name: "Tirunelveli", desc: "City & all zones" },
+  { name: "Palayamkottai", desc: "Town & surroundings" },
+  { name: "Rathapuram", desc: "Taluk headquarters & villages" },
+  { name: "Nanguneri", desc: "Town & nearby areas" },
+  { name: "Tenkasi", desc: "City & district areas" },
+  { name: "Ambasamudram", desc: "Town & surroundings" },
+  { name: "Cheranmahadevi", desc: "Town & nearby villages" },
+  { name: "Valliyamalpuram", desc: "PO & surrounding areas" },
+  { name: "Shencottai", desc: "Town & hill areas" },
 ];
 
-const hosurLocalities = [
-  "SIPCOT Industrial Area",
-  "Bagalur Road",
-  "Mathigiri",
-  "Old Hosur",
-  "Sipcot Phase 1 & 2",
-  "Zuzuvadi",
-  "Onnalvadi",
-  "Kelavarapalli",
-  "Bypass Road",
-  "RTO Office Area",
-  "Bus Stand Area",
-  "Periya Karadigatta",
-  "Mookandapalli",
-  "Maruthi Nagar",
+const localities = [
+  "Valliyamalpuram",
+  "Nambipathu",
+  "Rathapuram Taluk",
+  "Palayamkottai",
+  "Tirunelveli Town",
+  "Melapalayam",
+  "Pettai",
+  "Vannarpettai",
+  "Manakadu",
+  "Perumalpuram",
+  "Keezhavenmani",
+  "Thatchanallur",
+  "Alagiyapandiapuram",
+  "Gangaikondan",
 ];
 
 export default function ServiceAreas() {
@@ -45,16 +45,16 @@ export default function ServiceAreas() {
             <span>Areas We Serve</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Serving <span className="gradient-text">Hosur & Beyond</span>
+            Serving <span className="gradient-text">Tirunelveli & Beyond</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Local electrical contractors with deep knowledge of Hosur and
-            Krishnagiri district. Same-day response across our service areas.
+            Local electrical contractors with deep knowledge of Tirunelveli
+            district. Same-day response across our service areas.
           </p>
         </div>
 
         {/* Regional grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           {areas.map((area) => (
             <div
               key={area.name}
@@ -65,9 +65,7 @@ export default function ServiceAreas() {
                   <MapPin className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-gray-900 text-lg">
-                    {area.name}
-                  </h3>
+                  <h3 className="font-bold text-gray-900 text-lg">{area.name}</h3>
                   <p className="text-gray-600 text-sm mt-0.5">{area.desc}</p>
                 </div>
               </div>
@@ -75,21 +73,21 @@ export default function ServiceAreas() {
           ))}
         </div>
 
-        {/* Hosur localities highlight */}
+        {/* Tirunelveli localities highlight */}
         <div className="bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl p-8 sm:p-10 text-white">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-12 h-12 rounded-2xl bg-yellow-400 flex items-center justify-center">
               <MapPin className="w-6 h-6 text-blue-900" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold">All Hosur Localities Covered</h3>
+              <h3 className="text-2xl font-bold">All Tirunelveli Localities Covered</h3>
               <p className="text-blue-200 text-sm">
-                Free site visits within Hosur city limits
+                Free site visits within Tirunelveli district
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-            {hosurLocalities.map((locality) => (
+            {localities.map((locality) => (
               <div
                 key={locality}
                 className="flex items-center gap-2 text-sm text-blue-50 hover:text-yellow-400 transition-colors"

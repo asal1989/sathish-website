@@ -4,7 +4,7 @@ import { useInView } from "../hooks/useInView";
 import { CheckCircle, Award, Users, Zap } from "lucide-react";
 
 const milestones = [
-  { year: "2009", event: "Founded in Hosur, Tamil Nadu" },
+  { year: "2009", event: "Founded in Tirunelveli, Tamil Nadu" },
   { year: "2013", event: "Expanded to industrial projects" },
   { year: "2017", event: "ISO certification obtained" },
   { year: "2020", event: "Solar & CCTV division launched" },
@@ -93,7 +93,7 @@ export default function About() {
             </h3>
             <p className="text-gray-600 mb-4 leading-relaxed">
               Sree Isai Electrical Contractor is a premier electrical contracting
-              firm based in Hosur, Tamil Nadu. We serve residential, commercial,
+              firm based in Tirunelveli, Tamil Nadu. We serve residential, commercial,
               and industrial clients across the region with comprehensive
               electrical solutions.
             </p>

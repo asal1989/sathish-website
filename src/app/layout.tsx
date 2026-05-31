@@ -7,43 +7,41 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 const SITE_URL = "https://asal1989.github.io/sathish-website";
 const PHONE = "+91-96882-16635";
-
-// Absolute URL for logo (used in metadata/OG/schema which need absolute URLs)
 const LOGO_URL = `${SITE_URL}/logo.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Sree Isai Electrical Contractor — Hosur, Tamil Nadu | Trusted Electrical Services",
+      "Sree Isai Electrical Contractor — Tirunelveli, Tamil Nadu | Trusted Electrical Services",
     template: "%s | Sree Isai Electrical Contractor",
   },
   description:
-    "Sree Isai Electrical Contractor — Hosur's trusted licensed electrical contractor since 2009. House wiring, industrial & commercial works, solar, CCTV, generator, panel boards. Free quotes. Call +91 96882 16635.",
+    "Sree Isai Electrical Contractor — Tirunelveli's trusted licensed electrical contractor since 2009. House wiring, industrial & commercial works, solar, CCTV, generator, panel boards. Free quotes. Call +91 96882 16635.",
   keywords: [
     "Sree Isai Electrical Contractor",
-    "electrical contractor Hosur",
+    "electrical contractor Tirunelveli",
     "electrical contractor Tamil Nadu",
-    "house wiring contractor Hosur",
-    "industrial electrical Hosur",
-    "commercial electrical contractor Hosur",
-    "solar installation Hosur",
-    "CCTV installation Hosur",
-    "generator setup Hosur",
-    "panel board installation Hosur",
-    "best electrician Hosur",
+    "house wiring contractor Tirunelveli",
+    "industrial electrical Tirunelveli",
+    "commercial electrical contractor Tirunelveli",
+    "solar installation Tirunelveli",
+    "CCTV installation Tirunelveli",
+    "generator setup Tirunelveli",
+    "panel board installation Tirunelveli",
+    "best electrician Tirunelveli",
+    "electrician Rathapuram",
+    "electrical contractor Rathapuram taluk",
     "licensed electrician Tamil Nadu",
-    "Krishnagiri electrical contractor",
   ],
   authors: [{ name: "Sree Isai Electrical Contractor" }],
   creator: "Sree Isai Electrical Contractor",
   publisher: "Sree Isai Electrical Contractor",
   alternates: { canonical: "/" },
   openGraph: {
-    title:
-      "Sree Isai Electrical Contractor — Hosur, Tamil Nadu",
+    title: "Sree Isai Electrical Contractor — Tirunelveli, Tamil Nadu",
     description:
-      "Powering Homes, Businesses & Industries with Excellence. Licensed electrical contractor in Hosur. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
+      "Powering Homes, Businesses & Industries with Excellence. Licensed electrical contractor in Tirunelveli. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
     url: SITE_URL,
     type: "website",
     locale: "en_IN",
@@ -53,15 +51,15 @@ export const metadata: Metadata = {
         url: LOGO_URL,
         width: 1254,
         height: 1254,
-        alt: "Sree Isai Electrical Contractor - Hosur, Tamil Nadu",
+        alt: "Sree Isai Electrical Contractor - Tirunelveli, Tamil Nadu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sree Isai Electrical Contractor — Hosur, Tamil Nadu",
+    title: "Sree Isai Electrical Contractor — Tirunelveli, Tamil Nadu",
     description:
-      "Licensed electrical contractor in Hosur. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
+      "Licensed electrical contractor in Tirunelveli. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
     images: [LOGO_URL],
   },
   icons: {
@@ -89,7 +87,6 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-// Schema.org LocalBusiness JSON-LD — critical for Google local SEO
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Electrician",
@@ -97,46 +94,39 @@ const jsonLd = {
   name: "Sree Isai Electrical Contractor",
   alternateName: "ஸ்ரீ இசை எலக்ட்ரிக்கல் கான்ட்ராக்டர்",
   description:
-    "Licensed electrical contractor in Hosur, Tamil Nadu specializing in residential, commercial, and industrial electrical works, solar installation, CCTV, generators, and panel board installation.",
+    "Licensed electrical contractor in Tirunelveli, Tamil Nadu specializing in residential, commercial, and industrial electrical works, solar installation, CCTV, generators, and panel board installation.",
   url: SITE_URL,
   telephone: PHONE,
   email: "info@sreeisaielectrical.com",
-  image: `${SITE_URL}/logo.png`,
-  logo: `${SITE_URL}/logo.png`,
+  image: LOGO_URL,
+  logo: LOGO_URL,
   priceRange: "₹₹",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Main Road",
-    addressLocality: "Hosur",
+    streetAddress: "403, Amman Kovil Street, Nambipathu",
+    addressLocality: "Valliyamalpuram",
     addressRegion: "Tamil Nadu",
-    postalCode: "635109",
+    postalCode: "627117",
     addressCountry: "IN",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 12.7409,
-    longitude: 77.8253,
+    latitude: 8.6528,
+    longitude: 77.6597,
   },
   areaServed: [
-    { "@type": "City", name: "Hosur" },
-    { "@type": "City", name: "Krishnagiri" },
-    { "@type": "City", name: "Bagalur" },
-    { "@type": "City", name: "Shoolagiri" },
-    { "@type": "City", name: "Berigai" },
-    { "@type": "City", name: "Thally" },
+    { "@type": "City", name: "Tirunelveli" },
+    { "@type": "City", name: "Palayamkottai" },
+    { "@type": "City", name: "Rathapuram" },
+    { "@type": "City", name: "Nanguneri" },
+    { "@type": "City", name: "Tenkasi" },
+    { "@type": "City", name: "Ambasamudram" },
     { "@type": "State", name: "Tamil Nadu" },
   ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
+      dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
       opens: "08:00",
       closes: "20:00",
     },
@@ -147,22 +137,14 @@ const jsonLd = {
       closes: "18:00",
     },
   ],
-  sameAs: [
-    "https://wa.me/919688216635",
-  ],
+  sameAs: ["https://wa.me/919688216635"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Electrical Services",
     itemListElement: [
-      "House Wiring",
-      "Commercial Electrical Works",
-      "Industrial Electrical Contracting",
-      "Electrical Maintenance & Repair",
-      "Solar Installation",
-      "CCTV Installation",
-      "Generator Setup",
-      "Panel Board Installation",
-      "Street Lighting Projects",
+      "House Wiring","Commercial Electrical Works","Industrial Electrical Contracting",
+      "Electrical Maintenance & Repair","Solar Installation","CCTV Installation",
+      "Generator Setup","Panel Board Installation","Street Lighting Projects",
     ].map((s) => ({
       "@type": "Offer",
       itemOffered: { "@type": "Service", name: s },
@@ -177,14 +159,13 @@ const jsonLd = {
   },
 };
 
-// FAQ structured data — surfaces as rich snippet in Google search
 const faqLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
     {
       q: "What areas do you serve in Tamil Nadu?",
-      a: "We serve Hosur, Krishnagiri, Bagalur, Shoolagiri, Berigai, Thally, and surrounding areas across Tamil Nadu and parts of Karnataka.",
+      a: "We serve Tirunelveli, Palayamkottai, Rathapuram, Nanguneri, Tenkasi, Ambasamudram, and surrounding areas across Tamil Nadu.",
     },
     {
       q: "Are you a licensed electrical contractor?",
@@ -192,11 +173,11 @@ const faqLd = {
     },
     {
       q: "Do you give free quotations?",
-      a: "Yes — site visits and quotations are completely free for residential and commercial projects in Hosur. Call +91 96882 16635 for a free quote.",
+      a: "Yes — site visits and quotations are completely free for residential and commercial projects in Tirunelveli district. Call +91 96882 16635 for a free quote.",
     },
     {
       q: "Do you handle emergency electrical repairs?",
-      a: "Yes, we offer 24/7 emergency electrical repair service in Hosur and surrounding areas. Call +91 96882 16635 anytime.",
+      a: "Yes, we offer 24/7 emergency electrical repair service in Tirunelveli and surrounding areas. Call +91 96882 16635 anytime.",
     },
     {
       q: "Do you provide warranty on your work?",
@@ -211,30 +192,18 @@ const faqLd = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="h-full scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://images.unsplash.com"
-          crossOrigin=""
-        />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
         <meta name="geo.region" content="IN-TN" />
-        <meta name="geo.placename" content="Hosur" />
-        <meta name="geo.position" content="12.7409;77.8253" />
-        <meta name="ICBM" content="12.7409, 77.8253" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-        />
+        <meta name="geo.placename" content="Tirunelveli" />
+        <meta name="geo.position" content="8.6528;77.6597" />
+        <meta name="ICBM" content="8.6528, 77.6597" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       </head>
       <body className={`${inter.className} min-h-full flex flex-col bg-white`}>
         <Toaster
