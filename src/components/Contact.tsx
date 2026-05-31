@@ -12,7 +12,7 @@ import {
   Loader2,
 } from "lucide-react";
 import toast from "react-hot-toast";
-import { supabase } from "@/lib/supabase";
+import { supabase, supabaseEnabled } from "@/lib/supabase";
 
 const contactInfo = [
   {
@@ -89,18 +89,20 @@ export default function Contact() {
     }
     setLoading(true);
 
-    // Save to Supabase database
-    try {
-      await supabase.from("inquiries").insert({
-        name: form.name,
-        phone: form.phone,
-        email: form.email || null,
-        service: form.service,
-        message: form.message || null,
-        status: "new",
-      });
-    } catch {
-      /* Non-blocking — WhatsApp still opens */
+    // Save to Supabase database (only if credentials are configured)
+    if (supabaseEnabled) {
+      try {
+        await supabase.from("inquiries").insert({
+          name: form.name,
+          phone: form.phone,
+          email: form.email || null,
+          service: form.service,
+          message: form.message || null,
+          status: "new",
+        });
+      } catch {
+        /* Non-blocking — WhatsApp still opens */
+      }
     }
 
     // Build WhatsApp message

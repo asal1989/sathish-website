@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { supabase, type Inquiry } from "@/lib/supabase";
+import { supabase, supabaseEnabled, type Inquiry } from "@/lib/supabase";
 import {
   LogOut,
   RefreshCw,
@@ -46,6 +46,10 @@ export default function AdminPage() {
   }, []);
 
   const fetchInquiries = useCallback(async () => {
+    if (!supabaseEnabled) {
+      setLoading(false);
+      return;
+    }
     setLoading(true);
     const { data, error } = await supabase
       .from("inquiries")
