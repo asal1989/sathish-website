@@ -44,11 +44,11 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group" aria-label="Sree Isai Electrical Contractor — Home">
             <div
-              className={`relative w-24 h-24 lg:w-28 lg:h-28 rounded-xl overflow-hidden transition-all duration-300 ${
+              className={`relative w-12 h-12 lg:w-14 lg:h-14 rounded-xl overflow-hidden transition-all duration-300 ${
                 scrolled
                   ? "bg-white shadow-md"
                   : "bg-white/95 shadow-lg ring-2 ring-white/30"
@@ -59,7 +59,7 @@ export default function Navbar() {
                 alt="Sree Isai Electrical Contractor"
                 fill
                 priority
-                sizes="112px"
+                sizes="56px"
                 className="object-contain p-0.5"
               />
             </div>

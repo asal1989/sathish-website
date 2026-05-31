@@ -36,9 +36,9 @@ export default function Footer() {
               <Image
                 src={asset("/logo.png")}
                 alt="Sree Isai Electrical Contractor"
-                width={280}
-                height={280}
-                className="w-64 h-64 object-contain"
+                width={140}
+                height={140}
+                className="w-32 h-32 object-contain"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
