@@ -12,9 +12,22 @@
   "categories": ["business", "utilities"],
   "icons": [
     {
-      "src": "/sathish-website/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
+      "src": "/sathish-website/logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/sathish-website/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/sathish-website/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

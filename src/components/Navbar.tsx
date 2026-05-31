@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Zap, Phone } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -44,15 +45,36 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-blue-300 transition-shadow">
-              <Zap className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+          <Link href="/" className="flex items-center gap-2 group" aria-label="Sree Isai Electrical Contractor — Home">
+            <div
+              className={`relative w-12 h-12 lg:w-14 lg:h-14 rounded-xl overflow-hidden transition-all duration-300 ${
+                scrolled
+                  ? "bg-white shadow-md"
+                  : "bg-white/95 shadow-lg ring-2 ring-white/30"
+              } group-hover:scale-105`}
+            >
+              <Image
+                src="/logo.png"
+                alt="Sree Isai Electrical Contractor"
+                fill
+                priority
+                sizes="56px"
+                className="object-contain p-0.5"
+              />
             </div>
-            <div>
-              <p className={`font-bold text-sm leading-tight transition-colors ${scrolled ? "text-blue-900" : "text-white"}`}>
+            <div className="hidden sm:block">
+              <p
+                className={`font-extrabold text-sm lg:text-base leading-tight transition-colors ${
+                  scrolled ? "text-blue-900" : "text-white"
+                }`}
+              >
                 Sree Isai
               </p>
-              <p className={`text-xs font-medium transition-colors ${scrolled ? "text-blue-600" : "text-yellow-300"}`}>
+              <p
+                className={`text-[10px] lg:text-xs font-semibold tracking-wide uppercase transition-colors ${
+                  scrolled ? "text-blue-600" : "text-yellow-300"
+                }`}
+              >
                 Electrical Contractor
               </p>
             </div>

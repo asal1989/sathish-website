@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     siteName: "Sree Isai Electrical Contractor",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-        width: 1200,
-        height: 630,
+        url: "/logo.png",
+        width: 1254,
+        height: 1254,
         alt: "Sree Isai Electrical Contractor - Hosur, Tamil Nadu",
       },
     ],
@@ -59,9 +59,14 @@ export const metadata: Metadata = {
     title: "Sree Isai Electrical Contractor — Hosur, Tamil Nadu",
     description:
       "Licensed electrical contractor in Hosur. House wiring, industrial, solar, CCTV. Call +91 96882 16635.",
-    images: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    images: ["/logo.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/logo.png", type: "image/png" },
     ],
+    apple: [{ url: "/logo.png" }],
+    shortcut: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -95,7 +100,8 @@ const jsonLd = {
   url: SITE_URL,
   telephone: PHONE,
   email: "info@sreeisaielectrical.com",
-  image: `${SITE_URL}/images/storefront.jpg`,
+  image: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/logo.png`,
   priceRange: "₹₹",
   address: {
     "@type": "PostalAddress",
@@ -220,8 +226,6 @@ export default function RootLayout({
         <meta name="geo.placename" content="Hosur" />
         <meta name="geo.position" content="12.7409;77.8253" />
         <meta name="ICBM" content="12.7409, 77.8253" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

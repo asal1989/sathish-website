@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Zap, Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const services = [
   "House Wiring",
@@ -30,14 +31,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-800 to-blue-600 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-              </div>
-              <div>
-                <p className="text-white font-bold text-sm">Sree Isai</p>
-                <p className="text-yellow-400 text-xs">Electrical Contractor</p>
-              </div>
+            <div className="bg-white rounded-2xl p-4 inline-block mb-4 shadow-lg">
+              <Image
+                src="/logo.png"
+                alt="Sree Isai Electrical Contractor"
+                width={140}
+                height={140}
+                className="w-32 h-32 object-contain"
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Leading electrical contractor in Hosur, Tamil Nadu. Serving
