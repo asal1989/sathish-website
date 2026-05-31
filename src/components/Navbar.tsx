@@ -83,7 +83,7 @@ export default function Navbar() {
               )
             )}
             <a
-              href="tel:+919876543210"
+              href="tel:+919688216635"
               className="flex items-center gap-2 bg-yellow-500 hover:bg-yellow-400 text-white font-semibold text-sm px-4 py-2 rounded-full transition-all hover:shadow-lg hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4" />
@@ -129,7 +129,7 @@ export default function Navbar() {
               )
             )}
             <a
-              href="tel:+919876543210"
+              href="tel:+919688216635"
               className="flex items-center justify-center gap-2 mx-4 mt-3 bg-yellow-500 text-white font-semibold py-3 rounded-full"
             >
               <Phone className="w-4 h-4" />

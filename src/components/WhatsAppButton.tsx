@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
       )}
 
       <a
-        href="https://wa.me/919876543210?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20a%20free%20quote%20for%20my%20electrical%20work"
+        href="https://wa.me/919688216635?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20a%20free%20quote%20for%20my%20electrical%20work"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"

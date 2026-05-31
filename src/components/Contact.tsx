@@ -17,15 +17,15 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 98765 43210",
-    link: "tel:+919876543210",
+    value: "+91 96882 16635",
+    link: "tel:+919688216635",
     sub: "Mon–Sat, 8AM–8PM",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+91 98765 43210",
-    link: "https://wa.me/919876543210?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20your%20services",
+    value: "+91 96882 16635",
+    link: "https://wa.me/919688216635?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20your%20services",
     sub: "Quick response guaranteed",
   },
   {
@@ -98,7 +98,7 @@ export default function Contact() {
         `*Details:* ${form.message || "—"}\n\n` +
         `Please contact me to discuss the project.`
     );
-    const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
+    const whatsappUrl = `https://wa.me/919688216635?text=${message}`;
 
     // Also prepare mailto as fallback
     const mailto = `mailto:info@sreeisaielectrical.com?subject=${encodeURIComponent(
@@ -215,7 +215,7 @@ export default function Contact() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/919876543210?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20a%20free%20quote"
+              href="https://wa.me/919688216635?text=Hello%20Sree%20Isai%20Electrical%2C%20I%20need%20a%20free%20quote"
               target="_blank"
               rel="noreferrer"
               className="mt-4 flex items-center justify-center gap-3 w-full py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl transition-all hover:shadow-lg"

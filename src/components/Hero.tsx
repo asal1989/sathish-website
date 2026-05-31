@@ -133,7 +133,7 @@ export default function Hero() {
               Get Free Quote
             </button>
             <a
-              href="tel:+919876543210"
+              href="tel:+919688216635"
               className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold text-lg"
             >
               <Phone className="w-5 h-5" />

@@ -100,11 +100,11 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4">Contact Us</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+919876543210" className="flex items-start gap-3 group">
+                <a href="tel:+919688216635" className="flex items-start gap-3 group">
                   <Phone className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-gray-300 text-sm group-hover:text-yellow-400 transition-colors">
-                      +91 98765 43210
+                      +91 96882 16635
                     </p>
                     <p className="text-gray-500 text-xs">Mon–Sat, 8AM–8PM</p>
                   </div>
@@ -131,7 +131,7 @@ export default function Footer() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919688216635"
               target="_blank"
               rel="noreferrer"
               className="mt-6 flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold text-sm px-4 py-3 rounded-xl transition-colors"
