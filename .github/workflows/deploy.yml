@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
           cache: "npm"
 
       - name: Setup Pages
@@ -42,7 +42,7 @@ jobs:
           NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
           NEXT_PUBLIC_ADMIN_PASSWORD: ${{ secrets.NEXT_PUBLIC_ADMIN_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=4096"
-        run: npm run build 2>&1 || (cat .next/trace 2>/dev/null | tail -20; exit 1)
+        run: npm run build
 
       - name: Add .nojekyll
         run: touch ./out/.nojekyll
