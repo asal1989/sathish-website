@@ -12,6 +12,7 @@ import {
   Loader2,
 } from "lucide-react";
 import toast from "react-hot-toast";
+import { supabase } from "@/lib/supabase";
 
 const contactInfo = [
   {
@@ -80,13 +81,27 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.service) {
       toast.error("Please fill in the required fields.");
       return;
     }
     setLoading(true);
+
+    // Save to Supabase database
+    try {
+      await supabase.from("inquiries").insert({
+        name: form.name,
+        phone: form.phone,
+        email: form.email || null,
+        service: form.service,
+        message: form.message || null,
+        status: "new",
+      });
+    } catch {
+      /* Non-blocking — WhatsApp still opens */
+    }
 
     // Build WhatsApp message
     const message = encodeURIComponent(
@@ -107,16 +122,8 @@ export default function Contact() {
 
     // Open WhatsApp
     window.open(whatsappUrl, "_blank");
-    toast.success("Opening WhatsApp! Your inquiry is ready to send.");
+    toast.success("Inquiry saved! Opening WhatsApp...");
 
-    // Save inquiry locally as backup
-    try {
-      const inquiries = JSON.parse(localStorage.getItem("inquiries") || "[]");
-      inquiries.push({ ...form, date: new Date().toISOString() });
-      localStorage.setItem("inquiries", JSON.stringify(inquiries));
-    } catch {
-      /* localStorage unavailable */
-    }
 
     // Fallback email link
     setTimeout(() => {

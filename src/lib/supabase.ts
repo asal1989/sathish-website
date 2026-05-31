@@ -1,0 +1,17 @@
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+export type Inquiry = {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  service: string;
+  message: string;
+  status: "new" | "contacted" | "converted" | "closed";
+  created_at: string;
+};
