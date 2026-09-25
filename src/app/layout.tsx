@@ -150,13 +150,6 @@ const jsonLd = {
       itemOffered: { "@type": "Service", name: s },
     })),
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "200",
-    bestRating: "5",
-    worstRating: "1",
-  },
 };
 
 const faqLd = {

@@ -5,7 +5,6 @@ import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServiceAreas from "@/components/ServiceAreas";
 import Gallery from "@/components/Gallery";
-import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
@@ -23,7 +22,6 @@ export default function HomePage() {
         <WhyChooseUs />
         <Gallery />
         <ServiceAreas />
-        <Testimonials />
         <FAQ />
         <Blog />
         <Contact />

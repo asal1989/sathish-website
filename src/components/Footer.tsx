@@ -19,7 +19,6 @@ const quickLinks = [
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#gallery" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
@@ -154,9 +153,22 @@ export default function Footer() {
           <p className="text-gray-500 text-xs">
             © {new Date().getFullYear()} Sree Isai Electrical Contractor. All rights reserved.
           </p>
-          <p className="text-gray-600 text-xs">
-Tirunelveli, Tamil Nadu, India | Licensed Electrical Contractor
-          </p>
+          <div className="flex flex-col sm:items-end gap-1">
+            <p className="text-gray-600 text-xs">
+              Tirunelveli, Tamil Nadu, India | Licensed Electrical Contractor
+            </p>
+            <p className="text-gray-600 text-xs">
+              Website developed by{" "}
+              <a
+                href="https://dheeprixsolutions.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-400 hover:text-yellow-400 transition-colors"
+              >
+                Dheeprix Solutions
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
