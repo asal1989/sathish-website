@@ -1,0 +1,19 @@
+# Apache (cPanel) config for the static export
+RewriteEngine On
+
+# Force HTTPS + www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.sielectricals.in%{REQUEST_URI} [L,R=301]
+
+# Serve /page/ from /page/index.html, fall back to 404 page
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>

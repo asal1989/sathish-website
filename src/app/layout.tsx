@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     images: [LOGO_URL],
   },
   icons: {
-    icon: [{ url: "/sathish-website/logo.png", type: "image/png" }],
-    apple: [{ url: "/sathish-website/logo.png" }],
-    shortcut: ["/sathish-website/logo.png"],
+    icon: [{ url: "/logo.png", type: "image/png" }],
+    apple: [{ url: "/logo.png" }],
+    shortcut: ["/logo.png"],
   },
   robots: {
     index: true,
