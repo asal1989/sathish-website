@@ -112,10 +112,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@sreeisaielectrical.com" className="flex items-start gap-3 group">
+                <a href="mailto:sathish@sielectricals.in" className="flex items-start gap-3 group">
                   <Mail className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-300 text-sm group-hover:text-yellow-400 transition-colors">
-                    info@sreeisaielectrical.com
+                    sathish@sielectricals.in
                   </p>
                 </a>
               </li>

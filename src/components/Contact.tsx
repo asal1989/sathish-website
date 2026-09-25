@@ -32,8 +32,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@sreeisaielectrical.com",
-    link: "mailto:info@sreeisaielectrical.com",
+    value: "sathish@sielectricals.in",
+    link: "mailto:sathish@sielectricals.in",
     sub: "Reply within 4 hours",
   },
   {
@@ -118,7 +118,7 @@ export default function Contact() {
     const whatsappUrl = `https://wa.me/919688216635?text=${message}`;
 
     // Also prepare mailto as fallback
-    const mailto = `mailto:info@sreeisaielectrical.com?subject=${encodeURIComponent(
+    const mailto = `mailto:sathish@sielectricals.in?subject=${encodeURIComponent(
       `Quote Request from ${form.name}`
     )}&body=${message}`;
 

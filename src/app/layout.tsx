@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
-const SITE_URL = "https://asal1989.github.io/sathish-website";
+const SITE_URL = "https://www.sielectricals.in";
 const PHONE = "+91-96882-16635";
 const LOGO_URL = `${SITE_URL}/logo.png`;
 
@@ -97,7 +97,7 @@ const jsonLd = {
     "Licensed electrical contractor in Tirunelveli, Tamil Nadu specializing in residential, commercial, and industrial electrical works, solar installation, CCTV, generators, and panel board installation.",
   url: SITE_URL,
   telephone: PHONE,
-  email: "info@sreeisaielectrical.com",
+  email: "sathish@sielectricals.in",
   image: LOGO_URL,
   logo: LOGO_URL,
   priceRange: "₹₹",
